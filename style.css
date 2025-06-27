@@ -2,15 +2,22 @@
 p{
 
 
-    color: brown;
+    /* /* color: brown;
     font-weight: bolder;
-    font-size: 55px;
+    font-size: 55px; */
     text-decoration:line-through;
     font-style: italic;
+    border-width: 3px ;
+    border-style: dashed;
+    border-color: brown;
+     padding: 30px;
+    margin-left: 35px;
+    margin: 20px; */
+    border-radius: 15px;
 }
 
 
-h{
+h1{
 
 
     color: black;
@@ -19,4 +26,13 @@ h{
     text-decoration: overline;
     font-style: italic;+
     font-family: timeline-scope: ;;
+border: 15px solid blue;
+border-radius: 30px
+  solid green;
+  bort
+
+
+
+
+   
 }
