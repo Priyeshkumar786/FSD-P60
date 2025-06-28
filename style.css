@@ -1,10 +1,10 @@
   
-p{
+/* p{
 
 
     /* /* color: brown;
     font-weight: bolder;
-    font-size: 55px; */
+    font-size: 55px; 
     text-decoration:line-through;
     font-style: italic;
     border-width: 3px ;
@@ -12,27 +12,117 @@ p{
     border-color: brown;
      padding: 30px;
     margin-left: 35px;
-    margin: 20px; */
+    margin: 20px; 
     border-radius: 15px;
-}
+} */
 
 
-h1{
+/* h1{
 
 
     color: black;
     font-weight: bolder;
     font-size: 35px;
     text-decoration: overline;
-    font-style: italic;+
-    font-family: timeline-scope: ;;
+    font-style: italic;
+    font-family: timeline-scope;
 border: 15px solid blue;
-border-radius: 30px
-  solid green;
-  bort
+border-radius: 30px  solid green;
 
 
 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 25px solid red;
+    border-radius: 5px;
+    background-color: black;
+    -webkit-text-fill-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ */
+
+
+/* 
+div{
+
+font-style: italic;
+
+} */
+
+
+
+
+
+.g1{
+
+    color: blueviolet;
+
+}
+
+
+.g2{
+
+
+    color: aquamarine;
+}
+
+.g3{
+
+
+    color: cadetblue;
+
+}
+
+
+.g4{
+
+
+
+    color: violet;
+}
+
+
+.g5
+{
+
+    color: palevioletred;
+}
+
+.g6
+{
+
+color: brown;
+
+
+
+}
+
+.g7
+{
+
+
+    color: chartreuse;
+}
 
    
+.g8
+{
+
+
+    color: coral;
 }
