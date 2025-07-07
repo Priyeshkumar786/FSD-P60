@@ -373,3 +373,250 @@ color: brown;
         justify-content: center;
     }
 }
+
+.main-footer {
+    background-color: #2c0e0b; /* Dark background from the image */
+    color: #f0f0f0; /* Light text color */
+    padding: 40px 20px;
+    position: relative; /* For positioning absolute elements like buttons */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-around;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the footer content */
+    gap: 30px; /* Space between columns */
+}
+
+/* Footer Column Styling */
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-follow {
+    flex: 1; /* Allows columns to grow and shrink */
+    min-width: 250px; /* Minimum width before wrapping */
+    padding: 10px;
+}
+
+.footer-logo img {
+    max-width: 80px; /* Adjust logo size */
+    margin-bottom: 10px;
+}
+
+.footer-logo h1 {
+    font-size: 2em;
+    margin: 0 0 5px 0;
+    color: #ffd700; /* Example for a golden-like color for the name */
+}
+
+.footer-logo p {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-top: 0;
+}
+
+.footer-about p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-follow h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+/* Underline effect for headings */
+.footer-links h3::after,
+.footer-contact h3::after,
+.footer-follow h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px; /* Adjust underline width */
+    height: 3px;
+    background-color: #ffd700; /* Yellowish underline */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffd700; /* Hover color */
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.footer-contact a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #ffd700;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows icons to wrap if too many */
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #555; /* Darker background for icons */
+    color: #fff;
+    border-radius: 50%; /* Makes them circular */
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #ffd700; /* Hover color */
+    transform: translateY(-3px);
+}
+
+/* Footer Bottom Bar (Payment Methods) */
+.footer-bottom-bar {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+    margin-top: 30px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.payment-methods img {
+    max-height: 30px; /* Adjust size of payment icons */
+    filter: brightness(0.8) saturate(1.2); /* Slight effect to match footer tone */
+}
+
+/* Floating Buttons */
+.call-us-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff; /* Blue, adjust to match image */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1em;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.call-us-button:hover {
+    background-color: #0056b3;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 70px; /* Adjust to avoid overlap with WhatsApp */
+    background-color: #666; /* Grey, adjust if needed */
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #444;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/* Responsive Adjustments (Basic) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack columns on small screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-links h3::after,
+    .footer-contact h3::after,
+    .footer-follow h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
