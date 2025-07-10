@@ -617,33 +617,16 @@ color: brown;
     }
 
     .social-icons {
-        justify-content: center;
-    }
-}
-
-
-     <img src="output-onlinepngtools.png" alt="">
+        justify-content: cen
      
      
     
-     <nav>
 
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Places</a></li>
-        <li><a href="#">Services</a></li> 
-        <li><a href="#">Review</a></li>
-        <li><a href="#">About</a></li> 
-        <li><a href="#">Contact Us</a></li>
-      </ul>
 
-     </nav>
+      
+    
 
-      <div class="icon">
-     <i class="fa-regular fa-id-card"></i>
-     <i class="fa-solid fa-magnifying-glass"></i>
-     </div>
-
+      
 
 
 
@@ -657,64 +640,14 @@ color: brown;
 
 
      
-/* Footer Column Styling */
-.footer-about,
-.footer-links,
-.footer-contact,
-.footer-follow {
-    flex: 1; /* Allows columns to grow and shrink */
-    min-width: 250px; /* Minimum width before wrapping */
-    padding: 10px;
-}
 
-.footer-logo img {
-    max-width: 80px; /* Adjust logo size */
-    margin-bottom: 10px;
-}
 
-.footer-logo h1 {
-    font-size: 2em;
-    margin: 0 0 5px 0;
-    color: #ffd700; /* Example for a golden-like color for the name */
-}
 
-.footer-logo p {
-    font-size: 0.9em;
-    color: #ccc;
-    margin-top: 0;
-}
 
-.footer-about p {
-    font-size: 0.9em;
-    line-height: 1.6;
-}
 
-.footer-links h3,
-.footer-contact h3,
-.footer-follow h3 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    color: #ffffff;
-    position: relative;
-}
 
-/* Underline effect for headings */
-.footer-links h3::after,
-.footer-contact h3::after,
-.footer-follow h3::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 50px; /* Adjust underline width */
-    height: 3px;
-    background-color: #ffd700; /* Yellowish underline */
-}
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
 }
 
 .footer-links ul li {
@@ -889,7 +822,90 @@ color: brown;
 }
 
 
-     <img src="output-onlinepngtools.png" alt="">
+
+.call-us-button:hover {
+    background-color: #0056b3;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 70px; /* Adjust to avoid overlap with WhatsApp */
+    background-color: #666; /* Grey, adjust if needed */
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #444;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/* Responsive Adjustments (Basic) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack columns on small screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-links h3::after,
+    .footer-contact h3::after,
+    .footer-follow h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+     
      
      
     
+
+}
+     
