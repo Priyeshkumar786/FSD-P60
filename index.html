@@ -143,6 +143,50 @@ See the result, the elements point to the same address in memory.
 
 
 
+
+
+
+#interviewQuestions : 0007
+
+Q: What is the output of the following statement? Explain Why?
+Q: Explain // and how it works?
+Q: Explain Floor Division?
+
+16//-3
+Output: -6
+
+// (Floor division)
+It gives the floor value of the quotient produced by dividing the two operands. In other words, the floor division // rounds the result down to the nearest whole number.
+
+print(x/y)
+print(x//y)
+
+Notice that we are using the same values for x and y operands. But the result is quite different between / and //.
+
+When the result of floor division (//) is positive, it is as though the fractional portion is truncated off, leaving only the integer portion. 
+When the result is negative, the result is floored, i.e., rounded away from zero (towards negative infinity). In other words, rounded down to the next smallest (greater negative) integer.
+
+Let us see some more examples.
+
+print(float(x)//float(y))  # Notice the result will also be a float.
+
+x = -13  # Notice the value of `x` is assigned by with a unary negation (`-`) operator
+y = 3
+print(x//y)  # Notice the result. 
+
+# Instead of rounding up to 4 like in the case of a positive result, it round up to -5, the lesser value
+
+x= -13.0   # We changed the type of `x` from int to float. No change in value.
+print(x//y)  # What will be the result.
+
+Unlike the standard division (/), the result is not always a float. But when one of the operands is a float, then the result will also be a float.
+
+Division by zero will yield in the same error as above.
+
+    
+
+
+
     
 
 
