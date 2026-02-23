@@ -109,6 +109,41 @@ To list few of them here:
 There are several such applications which can be developed using Python
 
 
+    #interviewQuestions : 0008
+
+Q: List.copy() does a shallow copy of the list, but when we check their id's they point to different address? Why?
+
+A shallow copy means constructing a new collection object and then populating it with references to the child objects found in the original.
+
+Hence, when you check their id's they both point to different address.
+
+check out this code
+L1 =  1, 2, 3, 4  
+  
+# Using copy() to create a shallow copy 
+L2 = L1.copy() 
+
+print(id(L1), id(L2))
+>>> 2763664559240 2763665433480
+In the above result, address are different, they both point to different locations.
+
+
+But, the elements will be pointing to the same objects in both the lists.
+Check this code:
+
+print(id(L10), id(L20))
+>>> 140703554137856 140703554137856
+
+See the result, the elements point to the same address in memory.
+
+#list #collection #shallowCopy
+
+
+
+
+
+
+    
 
 
     
