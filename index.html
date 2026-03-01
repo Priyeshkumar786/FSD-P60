@@ -30,6 +30,18 @@ def apply_func(func, a, b):
 
 print(apply_func(add, 3, 5))
     
+# Call functions
+updated_num = call_by_val(num)
+updated_list = call_by_ref(a)
+
+# Print after function calls
+print("Updated value after call_by_val:", updated_num)
+print("Updated list after call_by_ref:", updated_list)
+
+s1 = 'GeeksforGeeks'
+
+s2 = lambda func: func.upper()
+print(s2(s1))
 
 
     def add(x, y):
