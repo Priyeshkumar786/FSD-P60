@@ -40,6 +40,14 @@ def check_age(request):
     def loop(request):
     data = "Gfg is the best"
     number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        context = {
+        "data": data,
+        "list": number_list
+    }
+    return render(request, "loop.html", context)
+
+    
+
 
 
 
