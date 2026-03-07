@@ -38,7 +38,9 @@ print(l)
 print(t)
 
 
-
+def simple_view(request):
+    context = {"data": "Gfg is the best"}
+    return render(request, "geeks.html", context)
 
 
 
