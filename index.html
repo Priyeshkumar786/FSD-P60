@@ -48,6 +48,26 @@ def simple_view(request):
     return render(request, "geeks.html", context)
 
 
+
+
+def check_age(request):
+    age = None
+    if request.method == 'POST':
+        # request.POST.get returns a string, default to "0"
+        age = int(request.POST.get('age', 0))
+    return render(request, 'check_age.html', {'age': age})
+
+
+
+
+
+
+
+
+
+
+
+    
     
 
 
