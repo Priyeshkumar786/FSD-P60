@@ -58,7 +58,18 @@ w = [i for i in c if c[i] == m]
 print(sorted(w)[0])p
 
 
+from collections import Counter
+votes = ['john','johnny','jackie','johnny','john','jackie','jamie','jamie','john','johnny','jamie','johnny','john']
+c = Counter(votes)
+d = {} 
 
+for v in c.values():
+    d[v] = []
+for k, v in c.items():
+    d[v].append(k)
+
+mx = sorted(d.keys(), reverse=True)[0]
+print(sorted(d[mx])[0])
 
 
 
