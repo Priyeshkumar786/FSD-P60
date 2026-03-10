@@ -68,7 +68,10 @@ List comprehension offers one-liner syntax to create a new list based on the val
 
 
 
+What is the Global Interpreter Lock (GIL) in Python, and why is it important?
+The Global Interpreter Lock (GIL) is a mutex in CPython (the reference Python implementation) that ensures only one native thread executes Python bytecode at a time. It simplifies memory management by protecting internal data structures like reference counts, but it also restricts true parallelism in CPU-bound tasks, making multithreading less effective for computational workloads. However, it works well for I/O-bound tasks, where threads spend time waiting on network, file, or database operations.
 
+    
 
 
 
