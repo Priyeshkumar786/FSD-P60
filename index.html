@@ -31,6 +31,13 @@ def multiply(x, y): return x * y
 def divide(x, y):   return ‘Cannot divide by zero’ if y == 0 else x / y
 num1 = float(input(‘Enter first number: ‘))
 num2 = float(input(‘Enter second number: ‘))
+op   = input(‘Choose operation (+, -, *, /): ‘)
+
+if   op == ‘+’: print(add(num1, num2))
+
+elif op == ‘-‘: print(subtract(num1, num2))
+
+
 
 
 
